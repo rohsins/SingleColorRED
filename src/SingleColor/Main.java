@@ -18,7 +18,7 @@ public class Main extends Application {
         paneController.addPane("vehiclePane1", getClass().getResource("singleColor.fxml"), controller);
         paneController.addPane("weather", getClass().getResource("weather.fxml"), controller);
 
-        paneController.activate("vehiclePane1");
+//        paneController.activate("vehiclePane1");
 
         primaryStage.setTitle("Single Color Display");
         primaryStage.setScene(scene);
@@ -27,9 +27,12 @@ public class Main extends Application {
         primaryStage.setHeight(160);
         primaryStage.show();
 
-        controller.setVehicleCount(1348793);
+//        controller.setVehicleCount(1348793);
 
         paneController.activate("weather");
+
+        Weather weather = new Weather();
+        weather.getData(controller);
     }
 
 
