@@ -1,0 +1,7 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.text.Text?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="TOP_LEFT" hgap="10" vgap="10">
+    <Text fx:id="vehicleCount" fill="red" text="wowza"
+        GridPane.rowIndex="1" GridPane.columnIndex="1" />
+</GridPane>
